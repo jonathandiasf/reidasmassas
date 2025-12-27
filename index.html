@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>O Rei das Massas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo"></h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Início</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="extras.html">Extras</a></li>
+          <li><a href="#pedido">Pedido Online</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Monte seu prato do seu jeito</h2>
+      <p>Escolha sua massa, molho e adicionais. Simples, rápido e delicioso.</p>
+      <a href="#cardapio" class="btn">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <section id="cardapio" class="cardapio">
+    <div class="container">
+      <h2>Nosso Cardápio</h2>
+      <div class="pratos">
+
+        <div class="prato">
+          <img src="image_1.png" 
+               alt="Prato de espaguete ao sugo com molho de tomate artesanal" 
+               loading="lazy">
+          <h3>Espaguete ao Sugo</h3>
+          <p>Molho de tomate artesanal.</p>
+          <button class="btn-adicionar" data-nome="Espaguete ao Sugo" data-preco="28.90">Adicionar</button>
+        </div>
+
+        <div class="prato">
+          <img src="image_2.png" 
+               alt="Prato de fettuccine alfredo com molho branco e parmesão" 
+               loading="lazy">
+          <h3>Fettuccine Alfredo</h3>
+          <p>Molho branco cremoso com parmesão.</p>
+          <button class="btn-adicionar" data-nome="Fettuccine Alfredo" data-preco="34.90">Adicionar</button>
+        </div>
+
+        <div class="prato">
+          <img src="image_3.png" 
+               alt="Prato de penne ao pesto com manjericão e nozes" 
+               loading="lazy">
+          <h3>Penne ao Pesto</h3>
+          <p>Molho pesto com manjericão e nozes.</p>
+          <button class="btn-adicionar" data-nome="Penne ao Pesto" data-preco="32.00">Adicionar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="pedido" class="pedido">
+    <div class="container">
+      <h2>Seu Pedido</h2>
+      <ul id="lista-carrinho"></ul>
+      <p>Total: <span id="total">R$ 0,00</span></p>
+      <button class="btn" id="finalizar-pedido">Finalizar Pedido no WhatsApp</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>📍 Rua Chile, 146 - Sabará | 📞 (31) 99339-0836</p>
+      <p>&copy; 2025 O Rei das Massas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

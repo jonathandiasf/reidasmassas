@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ingredientes Extras - O Rei das Massas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">O Rei das Massas 👑</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#cardapio">Cardápio</a></li>
+          <li><a href="extras.html">Extras</a></li>
+          <li><a href="index.html#pedido">Pedido Online</a></li>
+        </ul>
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-extras">
+    <div class="container">
+      <h2>Ingredientes Extras</h2>
+      <p>Personalize seu prato com nossos ingredientes frescos e saborosos!</p>
+      <a href="index.html#cardapio" class="btn">Ver Cardápio Principal</a>
+    </div>
+  </section>
+
+  <!-- Ingredientes Extras -->
+  <section id="extras" class="ingredientes-extras">
+    <div class="container">
+      <h2>Escolha Seus Extras</h2>
+      <p>Adicione sabor especial à sua massa favorita</p>
+      <div class="extras-grid">
+
+        <div class="extra-item">
+          <div class="extra-icon">🧄</div>
+          <h4>Alho Extra</h4>
+          <p class="extra-descricao">Alho refogado no azeite</p>
+          <div class="extra-preco">+ R$ 2,50</div>
+          <button class="btn-adicionar-extra" data-nome="Alho Extra" data-preco="2.50">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🧀</div>
+          <h4>Queijo Parmesão</h4>
+          <p class="extra-descricao">Parmesão italiano ralado na hora</p>
+          <div class="extra-preco">+ R$ 4,90</div>
+          <button class="btn-adicionar-extra" data-nome="Queijo Parmesão" data-preco="4.90">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🍄</div>
+          <h4>Cogumelos</h4>
+          <p class="extra-descricao">Cogumelos frescos refogados</p>
+          <div class="extra-preco">+ R$ 6,50</div>
+          <button class="btn-adicionar-extra" data-nome="Cogumelos" data-preco="6.50">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🥓</div>
+          <h4>Bacon</h4>
+          <p class="extra-descricao">Bacon crocante em cubinhos</p>
+          <div class="extra-preco">+ R$ 7,90</div>
+          <button class="btn-adicionar-extra" data-nome="Bacon" data-preco="7.90">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🌿</div>
+          <h4>Manjericão Fresco</h4>
+          <p class="extra-descricao">Folhas frescas de manjericão</p>
+          <div class="extra-preco">+ R$ 3,50</div>
+          <button class="btn-adicionar-extra" data-nome="Manjericão Fresco" data-preco="3.50">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🍅</div>
+          <h4>Tomate Cereja</h4>
+          <p class="extra-descricao">Tomates cereja doces e suculentos</p>
+          <div class="extra-preco">+ R$ 5,50</div>
+          <button class="btn-adicionar-extra" data-nome="Tomate Cereja" data-preco="5.50">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🫒</div>
+          <h4>Azeitonas</h4>
+          <p class="extra-descricao">Azeitonas pretas e verdes</p>
+          <div class="extra-preco">+ R$ 4,50</div>
+          <button class="btn-adicionar-extra" data-nome="Azeitonas" data-preco="4.50">Adicionar</button>
+        </div>
+
+        <div class="extra-item">
+          <div class="extra-icon">🌶️</div>
+          <h4>Pimenta Calabresa</h4>
+          <p class="extra-descricao">Para quem gosta de um toque picante</p>
+          <div class="extra-preco">+ R$ 2,90</div>
+          <button class="btn-adicionar-extra" data-nome="Pimenta Calabresa" data-preco="2.90">Adicionar</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resumo do Carrinho na página de extras -->
+  <section class="carrinho-resumo">
+    <div class="container">
+      <h3>Seu Carrinho</h3>
+      <div class="carrinho-info">
+        <ul id="lista-carrinho-resumo"></ul>
+        <p class="total-resumo">Total: <span id="total-resumo">R$ 0,00</span></p>
+        <div class="carrinho-acoes">
+          <a href="index.html#pedido" class="btn">Finalizar Pedido</a>
+          <a href="index.html#cardapio" class="btn btn-secondary">Continuar Comprando</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>📍 Rua Chile, 146 - Sabará | 📞 (31) 99339-0836</p>
+      <p>&copy; 2025 O Rei das Massas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
