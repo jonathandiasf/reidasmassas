@@ -77,7 +77,8 @@ nav {
 }
 
 .menu-toggle {
-  display: block; /* Visible by default for mobile-first approach */
+  display: block;
+  /* Visible by default for mobile-first approach */
   font-size: 1.5rem;
   cursor: pointer;
   color: #FFD700;
@@ -87,12 +88,14 @@ nav {
   border-radius: 4px;
   transition: all 0.3s ease;
   position: relative;
-  z-index: 1001; /* Ensure it's above other elements when active */
+  z-index: 1001;
+  /* Ensure it's above other elements when active */
 }
 
 @media (min-width: 769px) {
   .menu-toggle {
-    display: none; /* Hide on desktop */
+    display: none;
+    /* Hide on desktop */
   }
 }
 
@@ -169,6 +172,22 @@ nav {
   color: #d32f2f;
 }
 
+.categoria-titulo {
+  font-size: 1.6rem;
+  color: #3E2C2C;
+  margin: 2.5rem 0 1.5rem;
+  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, #fdd835, #ffeb3b);
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 4px 12px rgba(253, 216, 53, 0.3);
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.categoria-titulo:first-of-type {
+  margin-top: 0;
+}
+
 .pratos {
   display: flex;
   flex-wrap: wrap;
@@ -233,25 +252,48 @@ nav {
   background: white;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.8s ease-out both;
   border: 2px solid transparent;
 }
 
-.extra-item:nth-child(1) { animation-delay: 0.1s; }
-.extra-item:nth-child(2) { animation-delay: 0.2s; }
-.extra-item:nth-child(3) { animation-delay: 0.3s; }
-.extra-item:nth-child(4) { animation-delay: 0.4s; }
-.extra-item:nth-child(5) { animation-delay: 0.5s; }
-.extra-item:nth-child(6) { animation-delay: 0.6s; }
-.extra-item:nth-child(7) { animation-delay: 0.7s; }
-.extra-item:nth-child(8) { animation-delay: 0.8s; }
+.extra-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.extra-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.extra-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.extra-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.extra-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.extra-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.extra-item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.extra-item:nth-child(8) {
+  animation-delay: 0.8s;
+}
 
 .extra-item:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border-color: #fdd835;
 }
 
@@ -296,7 +338,7 @@ nav {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
   transition: left 0.5s;
 }
 
@@ -311,12 +353,19 @@ nav {
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
+
   40% {
     transform: translateY(-8px);
   }
+
   60% {
     transform: translateY(-4px);
   }
@@ -686,31 +735,34 @@ img:hover {
 /* ===== Hero da página de extras ===== */
 .hero-extras {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-   url('https://images.unsplash.com/photo-1621996346565-e3dbc353d2e5?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover,
-    linear-gradient(45deg, rgba(253, 216, 53, 0.3), rgba(255, 235, 59, 0.3));
- background-blend-mode: overlay;
- 
-
+    url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 5rem 1rem;
   border-bottom: 5px solid #fdd835;
   animation: heroFadeIn 1.2s ease-out;
 }
+
 .hero-extras h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  animation: fadeInUp 1s ease-out;
+  animation: fadeInUp 1s ease-out 0.5s both;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2.5rem;
+  border: 3px solid #fdd835;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .hero-extras p {
   font-size: 1.2rem;
-  margin-bottom: 2rem;
-  animation: fadeInUp 1s ease-out 0.3s;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 1s ease-out 0.7s both;
 }
 
 .hero-extras .btn {
-  animation: bounceIn 1s ease-out 0.6s;
+  animation: bounceIn 1s ease-out 1s both;
 }
 
 /* ===== Carrinho Resumo na página de extras ===== */
@@ -733,7 +785,7 @@ img:hover {
   background: white;
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 #lista-carrinho-resumo {
