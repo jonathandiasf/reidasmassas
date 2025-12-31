@@ -16,3 +16,8 @@ O objetivo é mostrar de forma simples como integrar um site com fluxo de pedido
 1. Clone este repositório:
    ```bash
    git clone https://github.com/jonathandiasf/reidasmassas.git
+---
+
+## Copyright
+
+Copyright 2025 O Rei das Massas

@@ -1,3 +1,5 @@
+/* Copyright 2025 O Rei das Massas */
+
 document.addEventListener('DOMContentLoaded', () => {
   const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
   const listaCarrinho = document.getElementById('lista-carrinho');
