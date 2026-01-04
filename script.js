@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const listaCarrinhoResumo = document.getElementById('lista-carrinho-resumo');
   const totalEl = document.getElementById('total');
   const totalResumoEl = document.getElementById('total-resumo');
-  const telefoneRestaurante = '5531993390836';
+  const telefoneRestaurante = '+5531999999999';
 
   // Formata valores para moeda BR
   const formatarMoeda = valor => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
